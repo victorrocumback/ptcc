@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #2B2D42;
+        }
+
+        .container {
+            background-color: #93B7BE;
+            width: 400px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+            border-radius: 10px;
+            position: absolute;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        }
+
+        .btn {
+            width: 100px;
+            border: rgb(67, 67, 99) 2cap solid;
+            border-radius: 5px;
+            height: 35px;
+            background-color: #FCF6B1;
+            cursor: pointer;
+        }
+
+        .title {
+            color: #FCF6B1;
+        }
+    /* MODAL*/
+    .modalOf {
+        display: none;
+    }
+
+    .modalOn {
+        height: 550px;
+        
+    }
+    .txt {
+        max-width: 300px;
+        text-align: center;
+        font-size: .9em;
+        max-width: 300px;
+    }
+
+
+
+    /* EVENTOS */
+
+        .event1{
+            position: relative;
+            top: 100px;
+
+        }
+        .event2{
+            position: relative;
+            top: -100px;
+            left: -130px;
+        }
+        .event3{
+            position: relative;
+            top: -80px;
+            left: 70px;
+        }
+        .event4{
+            position: relative;
+            top: 100px;
+            left: 90px;
+        }
+        .event5{
+            position: relative;
+            top: 90px;
+            left: -90px;
+        }
+        .event6{
+            position: relative;
+            top: -100px;
+            left: 50px;
+        }
+        .event7{
+            position: relative;
+            top: 120px;
+            left: 100px;
+        }
+        .event8{
+            position: relative;
+            top: -150px;
+            left: 10px;
+        }
+        .event9{
+            position: relative;
+            top: 100px;
+            left: -120px;
+        }
+        .event10{
+            position: relative;
+            top: -80px;
+            left: -140px;
+        }
+        .event11{
+            position: relative;
+            top: -135px;
+            left: 100px;
+        }
+        .event12{
+            position: relative;
+            top: 50px;
+            left: 54px;
+        }
+        .event13{
+            position: relative;
+            top: 80px;
+            left: -120px;
+        }
+        .event14{
+            position: relative;
+            top: -50px;
+            left: -185px;
+        }
+        .event15{
+            position: relative;
+            top: 40px;
+            left: -34px;
+        }
+        .event16{
+            position: relative;
+            top: 0px;
+            left: -105px;
+        }
+        .event17{
+            position: relative;
+            top: -45px;
+            left: 80px;
+        }
+        .event18{
+            position: relative;
+            top: -156px;
+            left: -140px;
+        }
+        .event19{
+            position: relative;
+            top: -100px;
+            left: 150px;
+        }
+        .event20{
+            position: relative;
+            top: 60px;
+            left: -120px;
+        }
+
+
+        .finalEvent{
+            display: none;
+
+        } 
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Quer ficar comigo?</h1>
+        <div class="box">
+            <button class="btn" id="yes">Sim</button>
+            <button class="btn" id="no" onmouseenter="mouseEnter(event)">Não</button>
+        </div>
+
+        <div class="container modalOf modalOn" id="modal">
+            <h1 class="title">Parabéns!</h1>
+            <p class="txt">Você tomou a decisão certa!</p>
+            <p class="txt">A partir de agora você deve: <strong>324236</strong> beijinhos ao <strong>Victor Rocumback</strong></p>
+            <img src="vetor.png" alt="">
+        </div>
+    </div>
+
+    <script>
+
+        const modal = document.getElementById('modal')
+        const sim = document.getElementById('yes')
+        const nao = document.getElementById('no')
+        var c = 0
+        
+        function moverBtn() {  
+            c+=1
+            nao.classList.add('event1')
+            if(c == 2){
+                nao.classList.add('event2')
+            }else if(c == 3){
+                nao.classList.add('event3')
+            }else if(c == 4){
+                nao.classList.add('event4')
+            }else if(c == 5){
+                nao.classList.add('event5')
+            }else if(c == 6){
+                nao.classList.add('event6')
+            }else if(c == 7){
+                nao.classList.add('event7')
+            }else if(c == 8){
+                nao.classList.add('event8')
+            }else if(c == 9){
+                nao.classList.add('event9')
+            }else if(c == 10){
+                nao.classList.add('event10')         
+            }else if(c == 11){
+                nao.classList.add('event11')         
+            }else if(c == 12){
+                nao.classList.add('event12')         
+            }else if(c == 13){
+                nao.classList.add('event13')         
+            }else if(c == 14){
+                nao.classList.add('event14')         
+            }else if(c == 15){
+                nao.classList.add('event15')         
+            }else if(c == 16){
+                nao.classList.add('event16')         
+            }else if(c == 17){
+                nao.classList.add('event17')         
+            }else if(c == 18){
+                nao.classList.add('event18')         
+            }else if(c == 19){
+                nao.classList.add('event19')         
+            }else if(c == 20){
+                nao.classList.add('event20')         
+            }
+            
+            
+            
+            else if (c == 21){
+                nao.innerText = "QUER SIM!"
+                nao.classList.toggle('finalEvent')
+        
+            }  
+        } 
+
+        function mouseEnter(event) {
+            moverBtn()
+        }
+
+        
+        sim.onclick = (event) => {
+            modal.classList.toggle('modalOf')
+        }
+    </script>
+</body>
+</html>
+
+
+
+<!-- nao.onmouseenter = (event) => {
+    nao.classList.toggle('event1')
+    c += 1
+
+    if(c == 2){
+        nao.classList.toggle('event2')
+    }else if(c == 3){
+        nao.classList.toggle('event3')
+    }else if(c == 4){
+        nao.classList.toggle('event4')
+    }else if(c == 5){
+        nao.classList.toggle('event5')
+    }else if(c == 6){
+        nao.classList.toggle('event6')
+    }else if(c == 7){
+        nao.classList.toggle('event7')
+    }else if(c == 8){
+        nao.classList.toggle('event8')
+    }else if(c == 9){
+        nao.classList.toggle('event9')
+    }else if(c == 10){
+        nao.classList.toggle('event10')
+    }
+} -->
